@@ -29,12 +29,9 @@ public class Main {
         } else {
             System.out.println("Массивы разные");
         }
-        int maxWeight = -1;
-        for (int weight : weights) {
-            if (weight > maxWeight) {
-                maxWeight = weight;
-                System.out.println(maxWeight);
-            }
+        for (int i = 0; i < weights.length - 1 && weights[i+1] !=0; i++) {
+            System.out.println(weights[i + 1] - weights[i]);
+
         }
     }
 }
